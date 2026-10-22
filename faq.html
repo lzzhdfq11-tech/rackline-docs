@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rackline Shopify theme FAQ for B2B merchants</title>
+<meta name="description" content="Answers about the Rackline Shopify theme: B2B plan requirements, hiding prices, quantity rules, quick order CSV format, PO numbers, quotes and presets.">
+<link rel="canonical" href="https://lzzhdfq11-tech.github.io/rackline-docs/faq.html">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#121311">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Rackline theme documentation">
+<meta property="og:title" content="Rackline Shopify theme FAQ">
+<meta property="og:description" content="Answers about the Rackline Shopify theme: B2B plan requirements, hiding prices, quantity rules, quick order CSV format, PO numbers, quotes and presets.">
+<meta property="og:url" content="https://lzzhdfq11-tech.github.io/rackline-docs/faq.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rackline Shopify theme FAQ">
+<meta name="twitter:description" content="Answers about the Rackline Shopify theme: B2B plan requirements, hiding prices, quantity rules, quick order CSV format, PO numbers, quotes and presets.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/nav.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "url": "https://lzzhdfq11-tech.github.io/rackline-docs/faq.html",
+      "inLanguage": "en-US",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the Rackline Shopify theme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rackline is a Shopify theme for B2B trade suppliers and wholesalers whose buyers reorder by SKU. It shows Shopify’s native B2B company prices, quantity rules and volume pricing, and adds a quick order page, table views for collections and search, a variant order table and a cart with purchase order numbers, CSV download and quote requests. It has three presets: Rackline, Ledger and Crate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is Rackline designed for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rackline is designed for distributors and trade suppliers with returning business buyers and large catalogs, for example electronics and network hardware, office and janitorial supplies, packaging, and catering or food-service supply. It also works for stores that sell to both trade and retail customers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Rackline need an app for B2B?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Rackline uses Shopify’s native B2B features (companies, catalogs, quantity rules and volume pricing) and displays them without a B2B app. The quick order page, variant order table, PO number field, cart CSV download, quote requests and trade application form are built into the theme. Shopify’s free Search & Discovery app is used to choose filters and complementary products, as in most themes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Shopify plan do the B2B features need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Shopify B2B features such as companies, catalogs, quantity rules and volume pricing are available on Shopify plans that include B2B, for example Shopify Plus. Check Shopify’s current plan comparison, because plan details can change. Shopify B2B also requires the newer customer accounts. Rackline’s own features, such as quick order, table view, the variant order table, PO numbers, cart CSV, quote requests and price visibility, do not depend on B2B and work on any plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I sell to trade and retail customers in the same store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Signed-in B2B buyers see the prices, quantity rules and volume pricing of their company catalog; other visitors see your regular prices. If you sell only to trade customers, set Show prices to to signed-in customers only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I hide prices from guests?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Theme settings → Pricing and trade, set Show prices to to Signed-in customers only. Guests then see a “Sign in to see prices” link instead of prices, quantity fields, add to cart and accelerated checkout buttons, and the quick order page asks them to sign in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do company prices come from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From Shopify. You set prices in B2B catalogs assigned to company locations in your Shopify admin. When a buyer signs in, Shopify returns the price for their current location and Rackline shows it on every page. The theme never calculates prices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Rackline handle quantity rules?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every quantity field reads the variant’s minimum, maximum and increment. The field shows a hint such as “Min 10 · Increments of 5”, the plus and minus buttons step by the increment, and a typed quantity that breaks the rule is changed to the nearest valid value with a message. Quantities already in the cart count toward the maximum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are volume price breaks shown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On product pages, the Price block shows a price ladder: each tier with its minimum quantity, unit price and saving, the tier that matches the chosen quantity highlighted, and a live unit price and subtotal. Collection tables, product lists and cards can show a compact one-line ladder when Show volume pricing in lists is on."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What file format does quick order accept?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A CSV file with the SKU or barcode in the first column and the quantity in the second. A header row is detected automatically, and commas, semicolons or tabs can separate the columns. The sample file starts with the header sku,quantity. Files can be up to 1 MB, and the order pad holds up to 250 lines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the uploaded CSV file stored anywhere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The file is read in the buyer’s browser and is not uploaded. Only the SKU lookups are sent to your store, the same way a search is."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can buyers scan barcodes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Quick order and the store search match variant barcodes as well as SKUs. A barcode scanner that types the code like a keyboard and presses Enter works in the quick order SKU field."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can buyers add a purchase order number?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Order review (cart) page has a PO number field, saved as a cart attribute named “PO number” that appears on the order. You can make it required in Theme settings → Cart, which stops checkout until it is filled in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can buyers request a quote instead of checking out?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. With quote requests turned on, the Order review page has a Request a quote button. The buyer adds their name, email, company, phone and a message, and the cart lines (SKU, product, quantity and line price) are sent to your store email through Shopify’s contact form."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can buyers download their cart?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Download CSV button on the Order review page saves the cart as a CSV file with SKU, product, variant, quantity, unit price, line total and currency."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do trade account applications work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create a page with the apply template and select it in Theme settings. The form collects company and contact details, business type and expected monthly volume, and sends them to your store email through Shopify’s contact form, tagged with your email marker. You review the application and create the company in your Shopify admin; the theme does not create accounts automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are aisle (zone) codes, and do I need them?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aisle codes are short codes such as A1 or B2 shown on menus, collection lists and product labels. They come from the collection metafield custom.zone_code; without it, the theme uses position codes. They are decorative and optional, and screen readers skip them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between the Rackline, Ledger and Crate presets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They share all features and differ in visual style. Rackline looks like warehouse bin labels (yellow and black, square corners, compact, table view). Ledger looks like an account book (green ledger paper, red margin lines, serif headings). Crate looks like market case labels (kraft paper, dashed labels, round stickers, grid view)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I change the preset later?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Change the visual style in Theme settings → Visual style and adjust fonts, colors and density separately. To start fresh with another preset’s home page, add Rackline again from the Shopify Theme Store with that preset; it is added as a separate unpublished theme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which languages does Rackline support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rackline ships in English, with one locale file. You can edit the storefront text in Shopify’s theme language editor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Rackline work with apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The product page, featured product and most content sections accept app blocks, and the Custom Liquid block and Custom section are available for other embeds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Rackline fast and accessible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On the live demo stores, Lighthouse 12.8 (October 2026) measured performance scores of 96 to 100 on mobile and 100 on desktop for the home, collection and product pages, and an accessibility score of 100 on all measured pages. Results on your store depend on your images, apps and content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Rackline add structured data for search engines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It outputs Organization and WebSite (with search) on the home page, Product or ProductGroup with offers on product pages, BreadcrumbList on collection and product pages, BlogPosting on articles and FAQPage from the FAQ section. See SEO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I buy Rackline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rackline is available only on the Shopify Theme Store, where you can also try it on your store before buying."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the support form linked on the Support page. We reply within two business days. Support covers theme questions and bug fixes; it does not include custom development."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Rackline docs",
+          "item": "https://lzzhdfq11-tech.github.io/rackline-docs/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FAQ",
+          "item": "https://lzzhdfq11-tech.github.io/rackline-docs/faq.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap">
+<div class="site-nav-row">
+<a class="brand" href="index.html"><svg viewBox="0 0 34 34" aria-hidden="true" focusable="false"><rect x="1" y="5" width="32" height="24" fill="#FFD21F" stroke="#FFD21F" stroke-width="2"/><rect x="1" y="5" width="9" height="24" fill="#121311" stroke="#FFD21F" stroke-width="2"/><path d="M14 10v14M16.5 10v14M18 10v14M21 10v14M23.5 10v14M25 10v14M28 10v14" stroke="#121311" stroke-width="1.6"/><text x="5.5" y="21" text-anchor="middle" font-family="ui-monospace,monospace" font-size="9" font-weight="700" fill="#FFD21F">R</text></svg>Rackline <span>docs</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-list">Menu</button>
+</div>
+<nav class="site-nav" aria-label="Documentation">
+<ul id="site-nav-list"><li><a href="index.html"><span class="code" aria-hidden="true">A1</span>Overview</a></li><li><a href="getting-started.html"><span class="code" aria-hidden="true">A2</span>Getting started</a></li><li class="z2"><a href="b2b.html"><span class="code" aria-hidden="true">B1</span>B2B pricing</a></li><li class="z2"><a href="quick-order.html"><span class="code" aria-hidden="true">B2</span>Quick order</a></li><li class="z3"><a href="product-pages.html"><span class="code" aria-hidden="true">C1</span>Product pages</a></li><li class="z3"><a href="collections-search.html"><span class="code" aria-hidden="true">C2</span>Collections &amp; search</a></li><li class="z4"><a href="cart-checkout.html"><span class="code" aria-hidden="true">D1</span>Cart &amp; checkout</a></li><li class="z4"><a href="presets.html"><span class="code" aria-hidden="true">D2</span>Presets</a></li><li><a href="settings.html"><span class="code" aria-hidden="true">E1</span>Settings</a></li><li><a href="sections.html"><span class="code" aria-hidden="true">E2</span>Sections &amp; blocks</a></li><li class="z2"><a href="seo.html"><span class="code" aria-hidden="true">F1</span>SEO</a></li><li class="z2"><a href="faq.html" aria-current="page"><span class="code" aria-hidden="true">F2</span>FAQ</a></li><li class="z3"><a href="changelog.html"><span class="code" aria-hidden="true">G1</span>Changelog</a></li><li class="z3"><a href="support.html"><span class="code" aria-hidden="true">G2</span>Support</a></li></ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Rackline docs</a></li><li aria-current="page">FAQ</li></ol></nav>
+<div class="doc doc--toc"><nav class="toc" aria-label="On this page"><details class="toc-details"><summary class="toc-title">On this page</summary><ol><li><a href="#general">General</a></li><li><a href="#b2b">B2B, pricing and trade accounts</a></li><li><a href="#quick-order">Quick order</a></li><li><a href="#cart">Cart and checkout</a></li><li><a href="#design">Presets and design</a></li></ol></details></nav><article class="doc-body">
+<h1>Rackline FAQ for B2B merchants</h1>
+<p class="lead">Answers to the questions merchants ask most about the Rackline Shopify theme: B2B requirements, prices, quantity rules, quick order, the cart, presets and support.</p>
+<h2 id="general">General</h2>
+<details class="faq"><summary>What is the Rackline Shopify theme?</summary><div><p>Rackline is a Shopify theme for B2B trade suppliers and wholesalers whose buyers reorder by SKU. It shows Shopify&rsquo;s native B2B company prices, quantity rules and volume pricing, and adds a quick order page, table views for collections and search, a variant order table and a cart with purchase order numbers, CSV download and quote requests. It has three presets: Rackline, Ledger and Crate.</p></div></details>
+<details class="faq"><summary>Who is Rackline designed for?</summary><div><p>Rackline is designed for distributors and trade suppliers with returning business buyers and large catalogs, for example electronics and network hardware, office and janitorial supplies, packaging, and catering or food-service supply. It also works for stores that sell to both trade and retail customers.</p></div></details>
+<details class="faq"><summary>Which languages does Rackline support?</summary><div><p>Rackline ships in English, with one locale file. You can edit the storefront text in Shopify&rsquo;s theme language editor.</p></div></details>
+<details class="faq"><summary>Does Rackline work with apps?</summary><div><p>Yes. The product page, featured product and most content sections accept app blocks, and the Custom Liquid block and Custom section are available for other embeds.</p></div></details>
+<details class="faq"><summary>Is Rackline fast and accessible?</summary><div><p>On the live demo stores, Lighthouse 12.8 (October 2026) measured performance scores of 96 to 100 on mobile and 100 on desktop for the home, collection and product pages, and an accessibility score of 100 on all measured pages. Results on your store depend on your images, apps and content.</p></div></details>
+<details class="faq"><summary>Does Rackline add structured data for search engines?</summary><div><p>Yes. It outputs Organization and WebSite (with search) on the home page, Product or ProductGroup with offers on product pages, BreadcrumbList on collection and product pages, BlogPosting on articles and FAQPage from the FAQ section. See <a href="seo.html">SEO</a>.</p></div></details>
+<details class="faq"><summary>Where can I buy Rackline?</summary><div><p>Rackline is available only on the Shopify Theme Store, where you can also try it on your store before buying.</p></div></details>
+<details class="faq"><summary>How do I get support?</summary><div><p>Use the support form linked on the <a href="support.html">Support</a> page. We reply within two business days. Support covers theme questions and bug fixes; it does not include custom development.</p></div></details>
+<h2 id="b2b">B2B, pricing and trade accounts</h2>
+<details class="faq"><summary>Does Rackline need an app for B2B?</summary><div><p>No. Rackline uses Shopify&rsquo;s native B2B features (companies, catalogs, quantity rules and volume pricing) and displays them without a B2B app. The quick order page, variant order table, PO number field, cart CSV download, quote requests and trade application form are built into the theme. Shopify&rsquo;s free Search &amp; Discovery app is used to choose filters and complementary products, as in most themes.</p></div></details>
+<details class="faq"><summary>Which Shopify plan do the B2B features need?</summary><div><p>Shopify B2B features such as companies, catalogs, quantity rules and volume pricing are available on Shopify plans that include B2B, for example Shopify Plus. Check Shopify&rsquo;s current plan comparison, because plan details can change. Shopify B2B also requires the newer customer accounts. Rackline&rsquo;s own features, such as quick order, table view, the variant order table, PO numbers, cart CSV, quote requests and price visibility, do not depend on B2B and work on any plan.</p></div></details>
+<details class="faq"><summary>Can I sell to trade and retail customers in the same store?</summary><div><p>Yes. Signed-in B2B buyers see the prices, quantity rules and volume pricing of their company catalog; other visitors see your regular prices. If you sell only to trade customers, set <em>Show prices to</em> to signed-in customers only.</p></div></details>
+<details class="faq"><summary>How do I hide prices from guests?</summary><div><p>In <em>Theme settings &rarr; Pricing and trade</em>, set <em>Show prices to</em> to <strong>Signed-in customers only</strong>. Guests then see a &ldquo;Sign in to see prices&rdquo; link instead of prices, quantity fields, add to cart and accelerated checkout buttons, and the quick order page asks them to sign in.</p></div></details>
+<details class="faq"><summary>Where do company prices come from?</summary><div><p>From Shopify. You set prices in B2B catalogs assigned to company locations in your Shopify admin. When a buyer signs in, Shopify returns the price for their current location and Rackline shows it on every page. The theme never calculates prices.</p></div></details>
+<details class="faq"><summary>How does Rackline handle quantity rules?</summary><div><p>Every quantity field reads the variant&rsquo;s minimum, maximum and increment. The field shows a hint such as &ldquo;Min 10 &middot; Increments of 5&rdquo;, the plus and minus buttons step by the increment, and a typed quantity that breaks the rule is changed to the nearest valid value with a message. Quantities already in the cart count toward the maximum.</p></div></details>
+<details class="faq"><summary>How are volume price breaks shown?</summary><div><p>On product pages, the Price block shows a price ladder: each tier with its minimum quantity, unit price and saving, the tier that matches the chosen quantity highlighted, and a live unit price and subtotal. Collection tables, product lists and cards can show a compact one-line ladder when <em>Show volume pricing in lists</em> is on.</p></div></details>
+<details class="faq"><summary>How do trade account applications work?</summary><div><p>Create a page with the <code>apply</code> template and select it in Theme settings. The form collects company and contact details, business type and expected monthly volume, and sends them to your store email through Shopify&rsquo;s contact form, tagged with your email marker. You review the application and create the company in your Shopify admin; the theme does not create accounts automatically.</p></div></details>
+<h2 id="quick-order">Quick order</h2>
+<details class="faq"><summary>What file format does quick order accept?</summary><div><p>A CSV file with the SKU or barcode in the first column and the quantity in the second. A header row is detected automatically, and commas, semicolons or tabs can separate the columns. The sample file starts with the header <code>sku,quantity</code>. Files can be up to 1 MB, and the order pad holds up to 250 lines.</p></div></details>
+<details class="faq"><summary>Is the uploaded CSV file stored anywhere?</summary><div><p>No. The file is read in the buyer&rsquo;s browser and is not uploaded. Only the SKU lookups are sent to your store, the same way a search is.</p></div></details>
+<details class="faq"><summary>Can buyers scan barcodes?</summary><div><p>Yes. Quick order and the store search match variant barcodes as well as SKUs. A barcode scanner that types the code like a keyboard and presses Enter works in the quick order SKU field.</p></div></details>
+<h2 id="cart">Cart and checkout</h2>
+<details class="faq"><summary>Can buyers add a purchase order number?</summary><div><p>Yes. The Order review (cart) page has a PO number field, saved as a cart attribute named &ldquo;PO number&rdquo; that appears on the order. You can make it required in <em>Theme settings &rarr; Cart</em>, which stops checkout until it is filled in.</p></div></details>
+<details class="faq"><summary>Can buyers request a quote instead of checking out?</summary><div><p>Yes. With quote requests turned on, the Order review page has a Request a quote button. The buyer adds their name, email, company, phone and a message, and the cart lines (SKU, product, quantity and line price) are sent to your store email through Shopify&rsquo;s contact form.</p></div></details>
+<details class="faq"><summary>Can buyers download their cart?</summary><div><p>Yes. The Download CSV button on the Order review page saves the cart as a CSV file with SKU, product, variant, quantity, unit price, line total and currency.</p></div></details>
+<h2 id="design">Presets and design</h2>
+<details class="faq"><summary>What are aisle (zone) codes, and do I need them?</summary><div><p>Aisle codes are short codes such as A1 or B2 shown on menus, collection lists and product labels. They come from the collection metafield <code>custom.zone_code</code>; without it, the theme uses position codes. They are decorative and optional, and screen readers skip them.</p></div></details>
+<details class="faq"><summary>What is the difference between the Rackline, Ledger and Crate presets?</summary><div><p>They share all features and differ in visual style. Rackline looks like warehouse bin labels (yellow and black, square corners, compact, table view). Ledger looks like an account book (green ledger paper, red margin lines, serif headings). Crate looks like market case labels (kraft paper, dashed labels, round stickers, grid view).</p></div></details>
+<details class="faq"><summary>Can I change the preset later?</summary><div><p>Yes. Change the visual style in <em>Theme settings &rarr; Visual style</em> and adjust fonts, colors and density separately. To start fresh with another preset&rsquo;s home page, add Rackline again from the Shopify Theme Store with that preset; it is added as a separate unpublished theme.</p></div></details>
+</article></div>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<p>Rackline Shopify theme 1.0.0 &middot; Documentation by Partwise Studio</p>
+<ul>
+<li><a href="getting-started.html">Getting started</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="changelog.html">Changelog</a></li>
+<li><a href="support.html">Support</a></li>
+<li><a href="https://themes.shopify.com/themes/rackline">View on the Shopify Theme Store</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

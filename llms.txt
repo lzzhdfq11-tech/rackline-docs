@@ -1,0 +1,34 @@
+# Rackline Shopify theme
+
+> Rackline is a Shopify theme (Online Store 2.0) for B2B trade suppliers and wholesalers whose buyers reorder by SKU. It shows Shopify's native B2B company prices, quantity rules and volume pricing (as a price ladder) without a B2B app, and adds a quick order page (SKU, barcode, pasted lines or CSV), table views for collections and search, a variant order table, and a cart with purchase order numbers, CSV download and quote requests. Three presets: Rackline (warehouse bin labels), Ledger (account book) and Crate (market case labels). Version 1.0.0, by Partwise Studio, available only on the Shopify Theme Store. English only.
+
+Key facts:
+
+- Built on Shopify's Skeleton theme with JSON templates, theme blocks and app blocks; no JavaScript frameworks or external scripts.
+- B2B features (companies, catalogs, quantity rules, volume pricing) are configured in the Shopify admin and require a Shopify plan that includes B2B, such as Shopify Plus. The theme displays and enforces them.
+- Price visibility setting: prices for everyone, or for signed-in customers only (guests see a sign-in link).
+- Quick order CSV format: column 1 SKU or barcode, column 2 quantity, header row optional (sample header "sku,quantity"), comma, semicolon or tab separated, up to 1 MB and 250 lines, read in the browser.
+- Cart: side panel or Order review page; PO number saved as the cart attribute "PO number" (optional or required); cart CSV columns SKU, Product, Variant, Quantity, Unit price, Line total, Currency; quote requests sent through the Shopify contact form.
+- Aisle codes come from the collection metafield custom.zone_code.
+- Measured on the live demo stores with Lighthouse 12.8 (October 2026): performance 96-100 mobile and 100 desktop on home, collection and product pages; accessibility 100 on all measured pages.
+
+## Docs
+
+- [Overview](https://lzzhdfq11-tech.github.io/rackline-docs/): What Rackline is, who it is for, the three presets and key B2B workflows
+- [Getting started](https://lzzhdfq11-tech.github.io/rackline-docs/getting-started.html): Install, choose a preset, set up Shopify B2B, create the quick order and trade application pages, zone codes and menus
+- [B2B pricing](https://lzzhdfq11-tech.github.io/rackline-docs/b2b.html): Company context, company prices, quantity rules, price ladders, price visibility and tax note
+- [Quick order](https://lzzhdfq11-tech.github.io/rackline-docs/quick-order.html): Quick order page setup, line entry, pasting, CSV format and the order check
+- [Product pages](https://lzzhdfq11-tech.github.io/rackline-docs/product-pages.html): Product blocks, the variant order table, specifications, downloads and stock
+- [Collections and search](https://lzzhdfq11-tech.github.io/rackline-docs/collections-search.html): Table and grid views, filters, the Options dialog, predictive SKU search and aisle codes
+- [Cart and checkout](https://lzzhdfq11-tech.github.io/rackline-docs/cart-checkout.html): Cart types, PO numbers, order notes, CSV download and quote requests
+- [Presets](https://lzzhdfq11-tech.github.io/rackline-docs/presets.html): Rackline, Ledger and Crate compared, and how to switch or mix them
+- [Settings](https://lzzhdfq11-tech.github.io/rackline-docs/settings.html): Every theme settings group with options and defaults
+- [Sections and blocks](https://lzzhdfq11-tech.github.io/rackline-docs/sections.html): Every section, block and template with its purpose
+- [SEO](https://lzzhdfq11-tech.github.io/rackline-docs/seo.html): Meta tags, Open Graph and structured data output by the theme
+- [FAQ](https://lzzhdfq11-tech.github.io/rackline-docs/faq.html): Common questions from B2B merchants
+
+## Optional
+
+- [Changelog](https://lzzhdfq11-tech.github.io/rackline-docs/changelog.html): Release notes
+- [Support](https://lzzhdfq11-tech.github.io/rackline-docs/support.html): Support policy and contact
+- [Full text](https://lzzhdfq11-tech.github.io/rackline-docs/llms-full.txt): All documentation pages as plain text

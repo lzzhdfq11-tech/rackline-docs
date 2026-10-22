@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quick order by SKU, barcode or CSV | Rackline docs</title>
+<meta name="description" content="Set up the Rackline quick order page so buyers can enter SKUs or barcodes, paste spreadsheet lines or upload a CSV, and add every checked line to the cart.">
+<link rel="canonical" href="https://lzzhdfq11-tech.github.io/rackline-docs/quick-order.html">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#121311">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Rackline theme documentation">
+<meta property="og:title" content="Quick order by SKU, barcode or CSV in Rackline">
+<meta property="og:description" content="Set up the Rackline quick order page so buyers can enter SKUs or barcodes, paste spreadsheet lines or upload a CSV, and add every checked line to the cart.">
+<meta property="og:url" content="https://lzzhdfq11-tech.github.io/rackline-docs/quick-order.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Quick order by SKU, barcode or CSV in Rackline">
+<meta name="twitter:description" content="Set up the Rackline quick order page so buyers can enter SKUs or barcodes, paste spreadsheet lines or upload a CSV, and add every checked line to the cart.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/nav.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      "name": "Quick order by SKU, barcode or CSV in Rackline",
+      "description": "Set up the Rackline quick order page so buyers can enter SKUs or barcodes, paste spreadsheet lines or upload a CSV, and add every checked line to the cart.",
+      "url": "https://lzzhdfq11-tech.github.io/rackline-docs/quick-order.html",
+      "inLanguage": "en-US",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Create the Quick order page",
+          "text": "Add a page with the order-pad template and select it in Theme settings > Pricing and trade > Quick order page.",
+          "url": "https://lzzhdfq11-tech.github.io/rackline-docs/quick-order.html#set-up"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Enter SKUs and quantities",
+          "text": "Type or scan a SKU or barcode in each line and enter a quantity. Each line is looked up as you type.",
+          "url": "https://lzzhdfq11-tech.github.io/rackline-docs/quick-order.html#enter-lines"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Paste lines from a spreadsheet",
+          "text": "Open Paste lines and paste one item per line: SKU or barcode, then the quantity, separated by a comma, tab or space.",
+          "url": "https://lzzhdfq11-tech.github.io/rackline-docs/quick-order.html#paste"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Upload a CSV file",
+          "text": "Open Upload CSV and choose a file with the SKU or barcode in the first column and the quantity in the second.",
+          "url": "https://lzzhdfq11-tech.github.io/rackline-docs/quick-order.html#csv"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Check the lines",
+          "text": "Review the order check: found lines, lines not found, adjusted quantities, sold out lines and the estimated subtotal.",
+          "url": "https://lzzhdfq11-tech.github.io/rackline-docs/quick-order.html#order-check"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Add all to cart",
+          "text": "Select Add all to cart to add every found line to the cart in one step.",
+          "url": "https://lzzhdfq11-tech.github.io/rackline-docs/quick-order.html#add-to-cart"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Rackline docs",
+          "item": "https://lzzhdfq11-tech.github.io/rackline-docs/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Quick order",
+          "item": "https://lzzhdfq11-tech.github.io/rackline-docs/quick-order.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap">
+<div class="site-nav-row">
+<a class="brand" href="index.html"><svg viewBox="0 0 34 34" aria-hidden="true" focusable="false"><rect x="1" y="5" width="32" height="24" fill="#FFD21F" stroke="#FFD21F" stroke-width="2"/><rect x="1" y="5" width="9" height="24" fill="#121311" stroke="#FFD21F" stroke-width="2"/><path d="M14 10v14M16.5 10v14M18 10v14M21 10v14M23.5 10v14M25 10v14M28 10v14" stroke="#121311" stroke-width="1.6"/><text x="5.5" y="21" text-anchor="middle" font-family="ui-monospace,monospace" font-size="9" font-weight="700" fill="#FFD21F">R</text></svg>Rackline <span>docs</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-list">Menu</button>
+</div>
+<nav class="site-nav" aria-label="Documentation">
+<ul id="site-nav-list"><li><a href="index.html"><span class="code" aria-hidden="true">A1</span>Overview</a></li><li><a href="getting-started.html"><span class="code" aria-hidden="true">A2</span>Getting started</a></li><li class="z2"><a href="b2b.html"><span class="code" aria-hidden="true">B1</span>B2B pricing</a></li><li class="z2"><a href="quick-order.html" aria-current="page"><span class="code" aria-hidden="true">B2</span>Quick order</a></li><li class="z3"><a href="product-pages.html"><span class="code" aria-hidden="true">C1</span>Product pages</a></li><li class="z3"><a href="collections-search.html"><span class="code" aria-hidden="true">C2</span>Collections &amp; search</a></li><li class="z4"><a href="cart-checkout.html"><span class="code" aria-hidden="true">D1</span>Cart &amp; checkout</a></li><li class="z4"><a href="presets.html"><span class="code" aria-hidden="true">D2</span>Presets</a></li><li><a href="settings.html"><span class="code" aria-hidden="true">E1</span>Settings</a></li><li><a href="sections.html"><span class="code" aria-hidden="true">E2</span>Sections &amp; blocks</a></li><li class="z2"><a href="seo.html"><span class="code" aria-hidden="true">F1</span>SEO</a></li><li class="z2"><a href="faq.html"><span class="code" aria-hidden="true">F2</span>FAQ</a></li><li class="z3"><a href="changelog.html"><span class="code" aria-hidden="true">G1</span>Changelog</a></li><li class="z3"><a href="support.html"><span class="code" aria-hidden="true">G2</span>Support</a></li></ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Rackline docs</a></li><li aria-current="page">Quick order</li></ol></nav>
+<div class="doc doc--toc"><nav class="toc" aria-label="On this page"><details class="toc-details"><summary class="toc-title">On this page</summary><ol><li><a href="#set-up">Set up the page</a></li><li><a href="#enter-lines">Enter SKUs line by line</a></li><li><a href="#line-states">Line states</a></li><li><a href="#paste">Paste lines from a spreadsheet</a></li><li><a href="#csv">CSV format</a></li><li><a href="#order-check">Order check and subtotal</a></li><li><a href="#add-to-cart">Add all to cart</a></li><li><a href="#devices">Tablets and phones</a></li><li><a href="#access">Sign-in and accessibility</a></li></ol></details></nav><article class="doc-body">
+<h1>Quick order by SKU, barcode or CSV</h1>
+<p class="lead">The Rackline quick order page lets buyers build an order from SKUs instead of browsing. They type or scan SKUs or barcodes, paste lines from a spreadsheet or upload a CSV file; each line is checked against your catalog for the buyer&rsquo;s price, stock and quantity rules, and one button adds everything to the cart.</p>
+
+<h2 id="set-up">Set up the page</h2>
+<ol class="steps">
+<li>Create a page with the theme template <code>order-pad</code> (<em>Online Store &rarr; Pages</em>).</li>
+<li>Select it in <em>Theme settings &rarr; Pricing and trade &rarr; Quick order page</em>. The header Quick order button, the mobile menu and the Trade welcome section link to it.</li>
+<li>Adjust the <strong>Quick order</strong> section in the theme editor.</li>
+</ol>
+<div class="table-wrap"><table><caption>Quick order section settings</caption>
+<thead><tr><th scope="col">Setting</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr><th scope="row">Heading, Introduction</th><td>Title and short text above the order pad.</td></tr>
+<tr><th scope="row">Empty rows to start with</th><td>1 to 30 empty lines (default 8). Buyers can add more rows.</td></tr>
+<tr><th scope="row">Show &ldquo;Paste lines&rdquo;</th><td>Shows the paste panel for spreadsheet lines.</td></tr>
+<tr><th scope="row">Show CSV upload</th><td>Shows the CSV file field.</td></tr>
+<tr><th scope="row">Show sample CSV download</th><td>Shows a link that creates a sample CSV file in the buyer&rsquo;s browser.</td></tr>
+<tr><th scope="row">Show image</th><td>Shows a product image on each found line.</td></tr>
+</tbody></table></div>
+
+<h2 id="enter-lines">Enter SKUs line by line</h2>
+<p>Each line has a SKU field and a quantity field. Buyers type a SKU or barcode and the line is looked up after a short pause. <kbd>Enter</kbd> moves to the next field, so a barcode scanner that types the code like a keyboard works in the SKU field. Pasting a column of SKUs into one SKU field fills several lines.</p>
+<p>A found line shows:</p>
+<ul>
+<li>the product title, variant and SKU or barcode, and optionally an image;</li>
+<li>stock status, following the theme&rsquo;s stock settings;</li>
+<li>the buyer&rsquo;s unit price, including the volume pricing tier that applies (for example &ldquo;50+ price&rdquo;);</li>
+<li>the line total.</li>
+</ul>
+<p>Matching is by exact SKU or barcode, not case-sensitive. Products must be published to your online store and searchable, and B2B buyers only find products in their catalog.</p>
+
+<h2 id="line-states">Line states</h2>
+<div class="table-wrap"><table><caption class="visually-hidden">Line states</caption>
+<thead><tr><th scope="col">State</th><th scope="col">What the buyer sees</th></tr></thead>
+<tbody>
+<tr><th scope="row">Found</th><td>Product details, price and line total; the line is marked as found.</td></tr>
+<tr><th scope="row">Not found</th><td>&ldquo;No product found for &hellip;&rdquo;, with &ldquo;Did you mean&rdquo; suggestions when similar products exist. The line is not added to the cart.</td></tr>
+<tr><th scope="row">Several matches</th><td>&ldquo;N products use this code&rdquo; and a menu to choose the right product.</td></tr>
+<tr><th scope="row">Quantity adjusted</th><td>&ldquo;Quantity changed from 17 to 15 to match the quantity rule&rdquo;.</td></tr>
+<tr><th scope="row">Sold out</th><td>The line is flagged as sold out.</td></tr>
+<tr><th scope="row">Lookup error</th><td>&ldquo;This SKU couldn&rsquo;t be checked&rdquo; with a Try again button.</td></tr>
+</tbody></table></div>
+
+<h2 id="paste">Paste lines from a spreadsheet</h2>
+<p>Under <strong>Paste lines</strong>, buyers paste one item per line: the SKU or barcode, then the quantity, separated by a comma, tab or space. Copying two columns from a spreadsheet works because spreadsheet cells are separated by tabs. A first line such as <code>SKU, Quantity</code> is treated as a header. Repeated SKUs are combined into one line.</p>
+<pre><code>SKU-1001, 10
+SKU-1002	24
+SKU-2040 5</code></pre>
+
+<h2 id="csv">CSV format</h2>
+<p>Under <strong>Upload CSV</strong>, buyers choose a CSV file. The file is read on the buyer&rsquo;s device and is not uploaded to a server.</p>
+<ul>
+<li><strong>Column 1:</strong> SKU or barcode.</li>
+<li><strong>Column 2:</strong> quantity. If the quantity is empty, the line keeps its default quantity, adjusted to the quantity rule.</li>
+<li>A header row is detected automatically.</li>
+<li>Commas, semicolons or tabs can separate the columns; quoted fields are supported.</li>
+<li>Maximum file size: 1 MB. The order pad holds up to 250 lines.</li>
+</ul>
+<p>The <strong>Download sample CSV</strong> link creates <code>quick-order-sample.csv</code> with this content:</p>
+<pre><code>sku,quantity
+SKU-1001,10
+SKU-1002,24
+SKU-2040,5</code></pre>
+
+<h2 id="order-check">Order check and subtotal</h2>
+<p>A summary panel counts the lines, how many were found and not found, how many quantities were adjusted and how many lines are sold out. It lists each issue by line number and shows an estimated subtotal that includes volume pricing. Discounts, shipping and taxes are shown in the cart and at checkout.</p>
+
+<h2 id="add-to-cart">Add all to cart</h2>
+<p><strong>Add all to cart</strong> sends every found line to the cart in one request. Lines that could not be added stay marked with the reason. Depending on the cart setting, the cart side panel opens or the buyer goes to the Order review page. <strong>Clear order pad</strong> empties all lines.</p>
+
+<h2 id="devices">Tablets and phones</h2>
+<p>On screens narrower than 990 pixels, each line becomes a card with the SKU, product, quantity and total stacked, so the page works without horizontal scrolling on tablets and phones.</p>
+
+<h2 id="access">Sign-in and accessibility</h2>
+<ul>
+<li>When <em>Show prices to</em> is set to signed-in customers only, guests see &ldquo;Sign in to use quick order&rdquo; instead of the order pad.</li>
+<li>Every field has a label that includes its line number, and results such as &ldquo;Line 3: no product found&rdquo; are announced to screen readers.</li>
+<li>Quick order needs JavaScript; without it, buyers see a message and can add products from their pages.</li>
+</ul>
+</article></div>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<p>Rackline Shopify theme 1.0.0 &middot; Documentation by Partwise Studio</p>
+<ul>
+<li><a href="getting-started.html">Getting started</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="changelog.html">Changelog</a></li>
+<li><a href="support.html">Support</a></li>
+<li><a href="https://themes.shopify.com/themes/rackline">View on the Shopify Theme Store</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

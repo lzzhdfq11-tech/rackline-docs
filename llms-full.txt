@@ -1,0 +1,1218 @@
+# Rackline Shopify theme documentation (full text)
+
+Source: https://lzzhdfq11-tech.github.io/rackline-docs/
+Version: 1.0.0
+Publisher: Partwise Studio
+Language: English
+
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/
+========================================================================
+
+Shopify theme · version 1.0.0 · Online Store 2.0
+
+# Rackline: a Shopify theme for B2B trade suppliers
+
+Rackline is a Shopify theme for wholesale and trade suppliers whose buyers reorder by SKU. It shows Shopify’s native B2B company prices, quantity rules and volume pricing, and adds a quick order page, table-first collections, a variant order table and a cart built for purchase orders. It comes with three presets: Rackline, Ledger and Crate.
+
+## Rackline at a glance
+
+What it is | A Shopify theme (Online Store 2.0) for B2B and wholesale stores, built on Shopify’s Skeleton theme with JSON templates, theme blocks and app blocks.
+Built for | Trade suppliers and distributors with returning business buyers and large catalogs: electronics and network hardware, office supplies, catering and food-service supply, and similar ranges.
+B2B | Uses Shopify’s native B2B features (companies, catalogs, quantity rules, volume pricing). The theme displays and enforces them; no B2B app is required.
+Ordering tools | Quick order page (SKU, barcode, pasted lines, CSV), variant order table, table view with quantity and Add on every row, purchase order number, cart CSV download and quote requests.
+Presets | Rackline (warehouse bin labels), Ledger (account book) and Crate (market case labels).
+Language | English. The theme ships with one locale.
+Code | Plain Liquid, CSS and JavaScript modules. No JavaScript frameworks and no external scripts or font services.
+Where to get it | Only on the Shopify Theme Store.
+
+## Who Rackline is for
+
+Rackline is designed for stores where most orders come from business buyers who already know what they need:
+
+- Distributors and wholesalers that sell to trade accounts with company prices and payment terms set up in Shopify B2B.
+- Suppliers whose buyers order by SKU or part number, often many lines at once, and reorder the same items.
+- Catalogs with many variants per product (sizes, pack quantities, colors) where buyers order several variants together.
+- Stores that sell to both trade and retail customers, or that show prices only to signed-in customers.
+
+## Three presets
+
+A preset sets the visual style, fonts, colors, density and home page layout. All three presets include the same sections, blocks and B2B features. Compare the presets in detail.
+
+Visual style: Bin labels
+
+### Rackline
+
+Warehouse bin labels and pick lists: concrete gray pages, label-stock panels, safety yellow on near-black, heavy square rules, aisle codes and decorative barcodes. Compact density and table view by default. Demo catalog: electronics and network hardware.
+
+Rackline demo store
+
+Visual style: Ledger
+
+### Ledger
+
+An account book: green ledger paper with faint ruled lines, a double red margin rule, navy ink, serif headings and printed figures for amounts. Totals carry a double underline. Comfortable density and table view by default. Demo catalog: office supplies.
+
+Ledger demo store
+
+Visual style: Crate labels
+
+### Crate
+
+Market case labels: kraft paper, case-end labels with rounded corners and a dashed inner border, round stickers for short facts, navy, tomato red and leaf green. Comfortable density and grid view by default. Demo catalog: catering and food-service supply.
+
+Crate demo store
+
+## Key B2B workflows
+
+### Company context
+
+Signed-in B2B buyers see their company and location in the header, with a link to switch location in their customer account.
+
+### Company prices
+
+Prices from the buyer’s B2B catalog appear on product pages, lists, search suggestions, quick order and the cart.
+
+### Quantity rules
+
+Minimum, maximum and increment rules are applied to every quantity field. Typed quantities snap to a valid value with a message.
+
+### Price ladders
+
+Volume pricing appears as a ladder of price breaks with the current tier highlighted, the saving and a live subtotal.
+
+### Quick order
+
+Buyers type or scan SKUs, paste lines from a spreadsheet or upload a CSV file. Each line is checked for price, stock and quantity rules before it goes to the cart.
+
+### Table view
+
+Collections and search results list products as rows with stock, price and a quantity field plus Add on every row.
+
+### Variant order table
+
+Order many variants of one product at once from a table with a running subtotal and one Add selected to cart button.
+
+### Cart for purchase orders
+
+Order notes, a purchase order number field, CSV download of the cart and a request-a-quote form.
+
+### Price visibility
+
+Show prices to everyone, or only to signed-in customers while guests see a sign-in link.
+
+## How a reorder works
+
+- 01 Enter linesThe buyer types or scans SKUs, pastes lines from a spreadsheet or uploads a CSV file on the quick order page.
+- 02 CheckEach line shows the product, the buyer’s price, stock and the quantity rule. Lines that are not found are flagged.
+- 03 Add allOne button adds every found line to the cart, with quantities adjusted to the quantity rules.
+- 04 ReviewOn the Order review page the buyer adds a PO number and a note, downloads a CSV copy or requests a quote, then checks out.
+
+## Performance and accessibility
+
+Rackline uses plain Liquid, CSS and small JavaScript modules, with no frameworks and no external scripts. These are measured results from the live demo stores, using Lighthouse 12.8 in October 2026, on the home, collection and product pages:
+
+96–100Performance, mobile
+
+100Performance, desktop
+
+100Accessibility, all measured pages
+
+Scores on your store depend on your images, apps and content, so these results are not a guarantee for every store.
+
+## Documentation
+
+### Getting started
+
+Install, choose a preset, set up Shopify B2B, create the trade pages, zone codes and menus.
+
+### B2B pricing
+
+Company context, prices, quantity rules, price ladders, price visibility and the tax note.
+
+### Quick order
+
+Set up the page, line entry, pasting, CSV format and the order check.
+
+### Product pages
+
+Every product block, including the variant order table, specifications and downloads.
+
+### Collections and search
+
+Table and grid views, filters, the Options dialog and predictive search.
+
+### Cart and checkout
+
+Cart types, PO numbers, order notes, CSV download and quote requests.
+
+### Presets
+
+Rackline, Ledger and Crate compared, and how to switch or mix them.
+
+### Settings
+
+Every theme settings group and what each setting does.
+
+### Sections and blocks
+
+Every section, block and template with a one-line purpose.
+
+### SEO
+
+Meta tags, Open Graph and the structured data the theme outputs.
+
+### FAQ
+
+Answers to common questions from B2B merchants.
+
+### Support
+
+Support policy, response time and how to contact us.
+
+## Get the theme
+
+Rackline is available only on the Shopify Theme Store. You can try it on your store before you buy it.
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/getting-started.html
+========================================================================
+
+# Getting started with Rackline
+
+This guide takes you from installing the Rackline Shopify theme to a published B2B storefront. B2B prices, quantity rules and volume pricing are set up in your Shopify admin; the theme then shows them on every page. Plan about an hour, plus the time to set up your B2B companies and catalogs.
+
+## 1. Install the theme
+
+- Open the Rackline listing on the Shopify Theme Store while you are logged in to your store.
+- Choose a preset (Rackline, Ledger or Crate) and select Try theme. Shopify adds an unpublished copy to Online Store → Themes.
+- Select Customize to open the theme editor. Your live store does not change until you publish.
+- When you are ready, buy the theme from the Shopify Theme Store and publish it.
+
+Moving from another theme?
+
+Products, collections, pages, menus, metafields and B2B data stay in your store. Only theme settings and section content are set up again.
+
+## 2. Choose a preset
+
+Preset | Look | Default collection view | Density
+Rackline | Warehouse bin labels: concrete gray, safety yellow, near-black, square corners | Table | Compact
+Ledger | Account book: green ledger paper, red margin lines, navy ink, serif headings | Table | Comfortable
+Crate | Market case labels: kraft paper, dashed box labels, round stickers | Grid | Comfortable
+
+The preset only sets starting values. You can change the visual style in Theme settings → Visual style, and fonts, colors and density in their own settings groups. See Presets.
+
+## 3. Set up Shopify B2B in your admin
+
+Rackline does not store prices or rules itself. It reads them from Shopify’s native B2B features, which you set up in your Shopify admin:
+
+- Companies and locations. Create a company for each business customer, add its locations and the customers who buy for it (Customers → Companies).
+- Catalogs. Assign a B2B catalog to each company location to set which products the location can buy and at what prices.
+- Quantity rules and volume pricing. In a B2B catalog, set minimum, maximum and increment quantities and quantity price breaks for products or variants.
+- Payment terms and checkout options are also part of Shopify B2B; the theme mentions payment terms in the cart for B2B buyers and Shopify applies them at checkout.
+
+Plan and accounts
+
+Shopify B2B features are available on Shopify plans that include B2B (for example Shopify Plus). Check Shopify’s current plan comparison for your store. Shopify B2B also requires customer accounts (the newer customer accounts, not legacy accounts).
+
+Once a B2B customer signs in, the theme shows their company and location, their catalog prices, quantity rules and price ladders. Read B2B pricing for what appears where.
+
+## 4. Create the Quick order page
+
+- In your admin go to Online Store → Pages and select Add page. Name it, for example, “Quick order”.
+- Under Theme template, choose order-pad and save.
+- In the theme editor open Theme settings → Pricing and trade and select the page as Quick order page.
+
+The header then shows a Quick order button (Header section setting “Show quick order button”), the mobile menu links to it, and the Trade welcome section offers it as a shortcut. Details: Quick order.
+
+## 5. Create the Trade application page
+
+- Add another page, for example “Apply for a trade account”, and choose the theme template apply.
+- In Theme settings → Pricing and trade, select it as Trade account application page.
+- Open the page in the theme editor to set the business type options, monthly volume options, consent checkbox label and the email marker.
+
+Applications arrive in your store email through Shopify’s contact form. You review them and create the company in your admin; the theme does not create accounts automatically. The utility bar can show an “Apply for a trade account” link, and the Trade welcome section shows an apply button to guests.
+
+Optional: create a Brands page with the template brands. It shows featured brand cards and an A–Z list of every product vendor in your store.
+
+## 6. Add aisle (zone) codes
+
+Aisle codes are the short codes such as A1 or B2 that Rackline prints on navigation items, collection lists and product labels. They are decorative: the collection name always carries the meaning, and screen readers skip the codes.
+
+Metafields the theme reads
+Owner | Namespace and key | Type | Used for
+Collection | custom.zone_code | Single line text, e.g. B2 | Aisle code on menus, collection lists and products in the collection
+Collection | custom.zone_color | Color (optional) | Custom zone color; text color is chosen for contrast
+Product | custom.bin_location | Single line text, e.g. A-12-03 (optional) | Printed on the product label strip instead of the SKU
+Product | custom.documents | List of files (optional) | Files in the Downloads block (the key is set in the block)
+
+Create the definitions in Settings → Custom data. Without a custom.zone_code, lists and menus get position codes (A1, A2, B1 …) in the order they appear. A code without a color takes its color from its first letter.
+
+## 7. Set up menus
+
+- Main menu (Header section): up to three levels. Top-level items with children open a full-width panel; second-level links become column headings with third-level links below. On desktop, top-level items that link to collections show an aisle letter from the collection’s zone code, or the next letter in menu order.
+- Customer account menu (Header section): links shown with the account button.
+- Utility bar link menu: small links above the header, such as Help or Contact. On phones they can move into the menu drawer (“Secondary menu in mobile drawer”).
+- Footer menus: add Menu blocks to the footer.
+
+## 8. Review the key settings
+
+- Pricing and trade: Show prices to everyone or signed-in customers only; tax note; quantity rule hints; trade pages; quote requests.
+- Stock: hidden, in stock / low stock, or exact quantity, and the low stock threshold.
+- Cart: side panel or cart page, order notes, purchase order number (optional or required), CSV download and accelerated checkout buttons.
+- Logo and business: logo, favicon and the legal business name, sales phone and email used in structured data.
+- Product lists: default collection view (table or grid) and whether lists show volume pricing.
+
+Filters on collection and search pages come from Shopify’s Search & Discovery app, where you choose which filters appear. Complementary products on product pages are also set up in that app. See Settings for every option.
+
+## 9. Check and publish
+
+- Preview the store as a guest and as a signed-in B2B customer to compare prices and the company chip.
+- Add a product with quantity rules and price breaks to the cart and check the price ladder and quantity hints.
+- Paste a few SKUs into the quick order page, including one that does not exist.
+- Place a test order with a PO number and check that it appears on the order.
+- Check the home page, a collection, a product and the cart on a phone.
+- Publish the theme in Online Store → Themes.
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/b2b.html
+========================================================================
+
+# B2B pricing, quantity rules and price breaks
+
+Rackline displays Shopify’s native B2B features: company context, catalog prices, quantity rules and volume pricing. You set these up in your Shopify admin and the theme shows and enforces them on product pages, lists, quick order and the cart. No B2B app is needed.
+
+## What the theme does and what Shopify does
+
+Feature | Set up in | What Rackline shows
+Companies and locations | Shopify admin (Customers → Companies) | Company and location chip in the header and menu drawer; Trade welcome section
+Company prices | B2B catalogs in Shopify admin | The buyer’s price everywhere a price appears
+Quantity rules | B2B catalogs | Rule hint and enforcement on every quantity field
+Volume pricing | B2B catalogs | Price ladder on product pages; optional compact ladder in lists
+Payment terms | Shopify B2B | A note in the cart for B2B buyers; Shopify applies the terms at checkout
+Price visibility | Theme settings → Pricing and trade | Prices for everyone, or for signed-in customers only
+Tax note | Theme settings → Pricing and trade | “Tax included” or “Excl. tax” text next to prices
+
+## Company context
+
+When a customer who buys for a company signs in, the header shows a company chip with the company name and the current location. The chip links to the customer account, where buyers who order for several locations switch location. The mobile menu drawer shows the same information as a card with a “Change location” link.
+
+The Trade welcome section adapts to who is viewing:
+
+- Guests see your heading, text, benefit points and an “Apply for a trade account” button.
+- B2B buyers see a greeting, their company and location, and shortcuts to quick order, orders and reorders, the cart summary and the catalog.
+- Signed-in customers without company access see their own heading and text.
+
+In the theme editor, the “Preview in the theme editor” setting switches between the guest and trade customer versions; customers always see the version that matches their account.
+
+## Company prices
+
+All prices come from Shopify. When a B2B buyer is signed in, Shopify returns the price from the catalog of their current location, and Rackline shows it on product pages, collection tables and grids, product lists, search suggestions, the quick order page and the cart. The theme never calculates prices or shows a price that Shopify will not charge.
+
+## Quantity rules
+
+Quantity rules set a minimum, a maximum and an increment for a variant. Rackline reads the rule for each variant and applies it to every quantity field: product pages, table rows, the variant order table, quick order lines and the cart.
+
+- Visible hint. When Show quantity rules next to quantity fields is on and a rule is not the default, the field shows a hint such as Min 10 · Max 500 · Increments of 5.
+- Snapping. A typed quantity that breaks the rule is changed to the nearest valid value and the reason is shown. For example, with increments of 5, typing 17 becomes 15 with the message “Order in multiples of 5”.
+- Plus and minus buttons step by the increment and stop at the minimum and maximum.
+- Items already in the cart count toward the maximum; the field shows how many are in the cart, or that the maximum is already in the cart.
+
+## Volume pricing as a price ladder
+
+Volume pricing (quantity price breaks) lowers the unit price at set quantities. Rackline shows it as a price ladder: a table of tiers, starting with the base price, with the unit price and the saving for each tier.
+
+- 1+$5.00Base price
+- 10+$4.75Save 5%
+- 50+$4.50Save 10% · current
+- 100+$4.25Save 15%
+
+Example values. In the Rackline preset the tiers are drawn as rising steps; Ledger draws a ruled tier table and Crate a case grid of tiers.
+
+- The tier that matches the quantity in the quantity field is highlighted and updates as the buyer changes the quantity.
+- A live line shows “Your unit price” and “Subtotal for” the chosen quantity.
+- The ladder appears only for variants that have price breaks.
+- In the Price block you can turn the ladder off or show it in its compact form.
+- With Theme settings → Product lists → Show volume pricing in lists, collection tables, product lists and product cards show a compact ladder such as 10+ $4.75 · 50+ $4.50.
+
+## Price visibility
+
+The setting Show prices to (Theme settings → Pricing and trade) has two options:
+
+- Everyone (default): all visitors see prices and can buy.
+- Signed-in customers only: guests see a “Sign in to see prices” link instead of prices. Quantity fields, add to cart buttons and accelerated checkout buttons are hidden for guests, the quick order page asks guests to sign in, and product structured data leaves out prices.
+
+## Tax note
+
+Tax note next to prices adds the text “Tax included” or “Excl. tax” after prices, or nothing. It is text only: Rackline does not calculate tax. Shopify calculates taxes at checkout, and the cart summary states whether taxes are included.
+
+## Trade account application
+
+The Trade application template is a form for businesses that want a trade account. It asks for the company name, contact name, email, phone, business registration or tax ID, website, type of business, expected monthly order volume and a message, with an optional consent checkbox. The form is sent through Shopify’s contact form to your store email, tagged with your email marker so you can filter these emails. You then create the company in your admin. See Getting started.
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/quick-order.html
+========================================================================
+
+# Quick order by SKU, barcode or CSV
+
+The Rackline quick order page lets buyers build an order from SKUs instead of browsing. They type or scan SKUs or barcodes, paste lines from a spreadsheet or upload a CSV file; each line is checked against your catalog for the buyer’s price, stock and quantity rules, and one button adds everything to the cart.
+
+## Set up the page
+
+- Create a page with the theme template order-pad (Online Store → Pages).
+- Select it in Theme settings → Pricing and trade → Quick order page. The header Quick order button, the mobile menu and the Trade welcome section link to it.
+- Adjust the Quick order section in the theme editor.
+
+Quick order section settings
+Setting | What it does
+Heading, Introduction | Title and short text above the order pad.
+Empty rows to start with | 1 to 30 empty lines (default 8). Buyers can add more rows.
+Show “Paste lines” | Shows the paste panel for spreadsheet lines.
+Show CSV upload | Shows the CSV file field.
+Show sample CSV download | Shows a link that creates a sample CSV file in the buyer’s browser.
+Show image | Shows a product image on each found line.
+
+## Enter SKUs line by line
+
+Each line has a SKU field and a quantity field. Buyers type a SKU or barcode and the line is looked up after a short pause. Enter moves to the next field, so a barcode scanner that types the code like a keyboard works in the SKU field. Pasting a column of SKUs into one SKU field fills several lines.
+
+A found line shows:
+
+- the product title, variant and SKU or barcode, and optionally an image;
+- stock status, following the theme’s stock settings;
+- the buyer’s unit price, including the volume pricing tier that applies (for example “50+ price”);
+- the line total.
+
+Matching is by exact SKU or barcode, not case-sensitive. Products must be published to your online store and searchable, and B2B buyers only find products in their catalog.
+
+## Line states
+
+State | What the buyer sees
+Found | Product details, price and line total; the line is marked as found.
+Not found | “No product found for …”, with “Did you mean” suggestions when similar products exist. The line is not added to the cart.
+Several matches | “N products use this code” and a menu to choose the right product.
+Quantity adjusted | “Quantity changed from 17 to 15 to match the quantity rule”.
+Sold out | The line is flagged as sold out.
+Lookup error | “This SKU couldn’t be checked” with a Try again button.
+
+## Paste lines from a spreadsheet
+
+Under Paste lines, buyers paste one item per line: the SKU or barcode, then the quantity, separated by a comma, tab or space. Copying two columns from a spreadsheet works because spreadsheet cells are separated by tabs. A first line such as SKU, Quantity is treated as a header. Repeated SKUs are combined into one line.
+
+SKU-1001, 10
+SKU-1002	24
+SKU-2040 5
+
+## CSV format
+
+Under Upload CSV, buyers choose a CSV file. The file is read on the buyer’s device and is not uploaded to a server.
+
+- Column 1: SKU or barcode.
+- Column 2: quantity. If the quantity is empty, the line keeps its default quantity, adjusted to the quantity rule.
+- A header row is detected automatically.
+- Commas, semicolons or tabs can separate the columns; quoted fields are supported.
+- Maximum file size: 1 MB. The order pad holds up to 250 lines.
+
+The Download sample CSV link creates quick-order-sample.csv with this content:
+
+sku,quantity
+SKU-1001,10
+SKU-1002,24
+SKU-2040,5
+
+## Order check and subtotal
+
+A summary panel counts the lines, how many were found and not found, how many quantities were adjusted and how many lines are sold out. It lists each issue by line number and shows an estimated subtotal that includes volume pricing. Discounts, shipping and taxes are shown in the cart and at checkout.
+
+## Add all to cart
+
+Add all to cart sends every found line to the cart in one request. Lines that could not be added stay marked with the reason. Depending on the cart setting, the cart side panel opens or the buyer goes to the Order review page. Clear order pad empties all lines.
+
+## Tablets and phones
+
+On screens narrower than 990 pixels, each line becomes a card with the SKU, product, quantity and total stacked, so the page works without horizontal scrolling on tablets and phones.
+
+## Sign-in and accessibility
+
+- When Show prices to is set to signed-in customers only, guests see “Sign in to use quick order” instead of the order pad.
+- Every field has a label that includes its line number, and results such as “Line 3: no product found” are announced to screen readers.
+- Quick order needs JavaScript; without it, buyers see a message and can add products from their pages.
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/product-pages.html
+========================================================================
+
+# Product page blocks and the variant order table
+
+The Rackline product page is built from theme blocks inside the Product information section, so you can reorder, remove or add blocks in the theme editor. Besides the usual title, price and buy buttons, it has blocks for SKU, stock, a variant order table, specifications, downloads, pickup availability and a delivery note, plus app blocks.
+
+## Product information section
+
+The Product information section holds the media gallery on one side and the product blocks on the other. Section settings: Media column width, Media position on desktop, Keep product information in view while scrolling, color scheme and spacing. The Featured product section uses the same blocks, so you can show a product with the same buying controls on any page.
+
+The default product template shows these blocks in this order: Title, SKU, Price, Stock status, Variant picker, Buy buttons, Pickup availability, Variant order table, Specifications, Description, Downloads, Collapsible row, Complementary products and Share. The Related products section follows below.
+
+## Product blocks
+
+Product blocks and their settings
+Block | What it shows | Settings
+Media | Images, Shopify-hosted and YouTube or Vimeo videos, and 3D models, with variant images | Image ratio, image fit, thumbnails and their position, image zoom
+Title | Product title with optional brand (vendor) | Heading level, heading size, show brand, link title to the product page
+SKU | SKU of the selected variant; updates when the variant changes | Show barcode
+Price | Price, compare-at price, unit price, tax note and the price ladder | Size, show saving on sale, show volume pricing, compact volume pricing
+Stock status | In stock, low stock or exact quantity, from real inventory | Show incoming stock note (uses the theme’s stock settings)
+Variant picker | Option values; swatches where set up; combined listings | Style: buttons, swatches or dropdowns; show selected value
+Buy buttons | Quantity field with quantity rules, Add to cart, purchase options (subscriptions), gift card recipient form | Show dynamic checkout buttons, show installments message, show gift card recipient form
+Pickup availability | Whether the variant can be picked up at your locations | None
+Variant order table | Every variant as a row for ordering many at once | Heading, collapse until opened, compact rows
+Specifications | SKU, barcode, brand, product type and weight, plus up to 8 label and value rows | Show each built-in row; row labels and values (values accept metafields)
+Description | Product description | Heading
+Downloads | Files from a product metafield plus up to 3 links, each with a file icon, name and file type | Files metafield (for example custom.documents), link labels and links
+Collapsible row | Expandable text, such as shipping or returns | Heading, icon, content or a page, open by default
+Delivery note | A short order cut-off or delivery promise, such as “Order by 2 pm for same-day dispatch” | Icon, title, text
+Complementary products | Products that pair well, with quick add for single-variant products | Heading, maximum items, show image, show SKU
+Share | Share and copy link | None
+
+Content blocks such as Heading, Text, Button, Image, Group and Custom Liquid, and app blocks from your installed apps, can also be added to the product page.
+
+## Variant order table
+
+The variant order table (variant matrix) lists every variant of a product as a row: option values, SKU, stock, price with compact volume pricing, and a quantity field that starts at 0. Buyers fill in quantities for the variants they need; a footer that stays in view shows the number of selected lines, the subtotal and an Add selected to cart button that adds all of them at once.
+
+- Quantity rules apply to each row, and rows with a quantity are marked as picked.
+- Keyboard: Enter moves to the next row, Shift+Enter to the previous row, Ctrl+Enter adds the selected rows.
+- Theme settings → Pricing and trade → Maximum rows in the variant order table (25 to 250, default 100) limits long tables; beyond it the table shows the first rows and a link to all options.
+- The same table opens from the Options button on collection and search rows. See Collections and search.
+
+## Specifications
+
+The Specifications block shows a two-column list. Built-in rows show the selected variant’s SKU, barcode and weight, the brand (linked to all products of that vendor) and the product type. Add up to 8 rows of your own: type a label such as “Voltage” and connect the value to a product metafield with the dynamic source button. Empty rows are hidden, and the list updates when the variant changes.
+
+## Downloads
+
+For data sheets, manuals or certificates, create a product metafield of type List of files (for example custom.documents), upload the files to it for each product, and enter the namespace and key in the Downloads block. You can also add up to three fixed links, such as a general catalog.
+
+## Stock display
+
+Stock follows Theme settings → Stock: hidden, “In stock / low stock”, or the exact quantity. A variant counts as low stock at or below the Low stock threshold. Only products whose inventory Shopify tracks show low stock or a count. The Stock status block can also show an incoming stock note, with the expected date when Shopify has one. Rackline does not show urgency messages or invented numbers.
+
+## When prices are hidden from guests
+
+If Show prices to is set to signed-in customers only, guests see a “Trade prices” panel with a sign-in link instead of prices, quantity fields and buy buttons. See Price visibility.
+
+## Related products
+
+The Related products section shows Shopify product recommendations below the product, as a table or a grid. Settings: heading, maximum items, layout, columns on desktop, show brand, show SKU and show stock status. Complementary products (the block) come from Shopify’s Search & Discovery app, where you choose which products pair with each product.
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/collections-search.html
+========================================================================
+
+# Collections, filters and SKU search
+
+Rackline lists products as a table or as a grid on collection and search pages. The table view puts stock, price and a quantity field with an Add button on every row, multi-variant products open a variant order table, and filters and sorting update the list without a full page reload.
+
+## Table view
+
+The table view is built for buyers who scan many rows. Each row shows:
+
+- the image, title, SKU and brand;
+- availability (following the stock settings);
+- the price, with compact volume pricing when Show volume pricing in lists is on;
+- a quantity field and Add button for single-variant products, or an Options (n) button for products with variants.
+
+On phones, rows keep the quantity field and Add button side by side so buyers can order without opening the product.
+
+## Grid view
+
+The grid view shows product cards. In the Rackline preset the cards look like shelf bin labels: a label strip with the aisle code and the SKU (or the product’s bin location), the image, title, stock and price, the compact price ladder, a decorative barcode and a quantity and add bar. Card options are in Theme settings → Product lists: image ratio, show brand, show SKU and show second image on hover.
+
+## Switching between table and grid
+
+The default view comes from Theme settings → Product lists → Default collection view (table in the Rackline and Ledger presets, grid in Crate). When Show table / grid toggle is on in the section, shoppers can switch views, and their choice is remembered in their browser for later visits.
+
+## Filtering, sorting and pages
+
+- Filters appear in a sidebar on desktop and in a panel on phones. Choose which filters appear (availability, price, product type, vendor, options, metafields) in Shopify’s Search & Discovery app.
+- Selected filters show as removable chips with Clear all; the price filter takes a from and to amount.
+- Filtering and sorting update the product list in place and keep the page address in sync, so the back button and shared links work.
+- The result count is announced to screen readers.
+- Pages are numbered. Settings: products per page, filter groups expanded by default, enable filtering and enable sorting.
+
+## Options: the variant order table from a list
+
+For products with several variants, the Options (n) button opens a dialog with the product’s variant order table. Buyers enter quantities for several variants, see the subtotal and add them all at once, without leaving the collection. A link opens the full product page. The dialog’s section, Quick order options, has settings for showing the image and brand.
+
+## Predictive search
+
+The header search field shows suggestions as the shopper types: products, collections, pages, articles and query suggestions. Product suggestions also match variant SKUs and barcodes, and show the SKU (setting Show SKUs in suggestions) and the price. Shoppers browse the suggestions with the arrow keys. Turn suggestions on or off with Theme settings → Search → Show search suggestions.
+
+## Search results page
+
+Search results use the same table or grid views, filters and sorting as collections. Settings include results per page, the view toggle, quantity and add to cart, and a link to matching pages and articles. When nothing matches, the page shows search tips, such as searching by the full SKU from an invoice.
+
+## Collection list page and aisle codes
+
+The collection list page (all collections) shows your collections as a table or as tiles, with an optional product count and image, and a Find a collection field that filters the list as you type. You can show all collections or choose specific ones, sorted alphabetically or in the order you list them.
+
+Each collection carries an aisle code and color band: the collection’s custom.zone_code metafield when it has one, otherwise a position code (A1, A2, B1 …). The same codes appear in the menu drawer, the Collection list section on the home page and on product labels. On desktop, the main menu shows aisle letters on top-level items. See Add aisle codes.
+
+## Brand index
+
+The Brand index section (template brands) shows up to 24 featured brand cards with a logo, short text and link, followed by an A–Z directory of every product vendor in your store with a jump-to-letter row. Each vendor links to its product list.
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/cart-checkout.html
+========================================================================
+
+# Cart, PO numbers, CSV export and quotes
+
+The Rackline cart is set up for business orders. Buyers can add a purchase order (PO) number and an order note, download the cart as a CSV file or send it as a quote request, and then check out with Shopify. You choose between a side panel cart and a full Order review page.
+
+## Cart type
+
+Theme settings → Cart → Cart type:
+
+- Side panel (default): adding to the cart opens a panel with the order lines, quantities, totals and a checkout button. A Review order link goes to the cart page.
+- Cart page: adding to the cart goes straight to the cart page.
+
+The cart page is titled Order review. It lists each line with image, SKU, product, unit price, quantity (with quantity rules) and line total, and has a summary column with totals, the PO number, the order note, checkout and the quote request. Lines can be removed one by one, or all at once with Clear order after a confirmation.
+
+## Purchase order number
+
+- Show purchase order number field (on by default) adds a “PO number” field to the Order review page.
+- The value is saved as a cart attribute named “PO number” and appears on the order in your admin.
+- Require purchase order number (off by default) stops checkout until the field is filled in, with the message “Enter a PO number before checking out.” In side panel mode, the panel then links to “Review order and add PO number”.
+
+## Order note
+
+Show order notes adds an “Order note” field for delivery instructions or other details. Shopify saves it with the order.
+
+## Download the cart as CSV
+
+With Allow cart download as CSV on, the Order review page has a Download CSV button. Buyers use it to attach the order to an internal purchase request. The file is created in the browser and named order-YYYY-MM-DD.csv.
+
+Columns in the cart CSV file
+Column | Content
+SKU | Variant SKU
+Product | Product title
+Variant | Variant title
+Quantity | Quantity in the cart
+Unit price | Price per unit
+Line total | Line price
+Currency | Cart currency code
+
+The file is UTF-8 encoded for spreadsheet apps, and values that start with characters such as = are written as text, so spreadsheets do not treat them as formulas.
+
+## Request a quote
+
+With Theme settings → Pricing and trade → Allow quote requests from the cart on (default), the Order review page has a Request a quote button. It opens a form with name, email, company, phone and message. The request is sent through Shopify’s contact form to your store email with the subject “Quote request” and a list of the cart lines (SKU, product, quantity and line price). The buyer’s cart stays as it is. You reply with a quote, for example as a draft order from your admin.
+
+## Checkout
+
+- Show accelerated checkout buttons shows Shopify’s accelerated checkout buttons in the cart. The product page has its own setting in the Buy buttons block. The buttons follow the theme’s button shape.
+- For B2B buyers, the cart notes that payment terms for their company account, such as net terms, are applied at checkout.
+- The cart summary shows discounts and states that taxes and shipping are calculated at checkout (or that taxes are included).
+- When prices are shown to signed-in customers only, guests see a sign-in link instead of prices and the checkout button.
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/presets.html
+========================================================================
+
+# Rackline, Ledger and Crate presets
+
+Rackline has three presets: Rackline (warehouse bin labels), Ledger (an account book) and Crate (market case labels). Each preset sets a visual style, fonts, color schemes, density, corner radius and a home page layout. All three include the same sections, blocks and B2B features, so the choice is about how your store looks, not what it can do.
+
+## Presets compared
+
+Rackline presets
+ | Rackline | Ledger | Crate
+Scene | Aisles of a parts warehouse and the picker’s pick list | A bound trade ledger on a distributor’s counter | The loading bay of a food and catering wholesaler
+Visual style setting | Bin labels | Ledger | Crate labels
+Colors | Concrete gray #DADBD5, label stock, near-black, safety yellow #FFD21F, teal | Ledger paper #F3EFE3, navy ink #1C2B45, ledger red, green | Kraft #DFCCA8, label paper, navy, tomato red, leaf green
+Headings / body / data fonts | Sofia Sans / Rethink Sans / Space Mono | Newsreader / Libre Franklin / Source Code Pro | Chivo / Karla / Roboto Mono
+Density | Compact | Comfortable | Comfortable
+Corner radius (controls / cards) | 0 / 0 px | 2 / 2 px | 10 / 14 px
+Default collection view | Table | Table | Grid
+Product cards | Shelf bin labels with zone chip, SKU strip and decorative barcode | Account cards, one account per product, on green ledger paper | Case-end labels with rounded corners, a dashed inner border and round stickers
+Volume pricing | Rising steps, current tier in yellow | Ruled tier table, current row marked in red | A case grid of price tiers ruled in ink
+Categories | Aisle signs with zone codes and color bands | Index tabs, like a ledger’s thumb index | Round zone stickers and category chips
+Totals | Yellow KPI box with mono figures | Accountant’s double underline | An inverted docket box
+Demo catalog | Electronics and network hardware | Office supplies | Catering and food-service supply
+Demo store | Rackline demo | Ledger demo | Crate demo
+
+## Rackline: warehouse bin labels
+
+The Rackline preset borrows everything from a parts warehouse: shelf bin labels, aisle signs with zone colors, floor-marking tape, label-printer type and the yellow of safety signage. Products appear as bin labels with the SKU as the loudest text, categories as aisle signs with a code such as B2, the variant order table and cart as a pick list with tick boxes, and section titles carry a hazard-stripe marker. Corners are square and there are no soft shadows. Density is compact so buyers see more rows.
+
+## Ledger: the account book
+
+The Ledger preset looks like a bound trade ledger: pale green ledger paper with faint ruled lines, a double red margin rule, navy ink and serif headings, with printed figures for every amount. Amount columns are bounded by red rules, totals carry a double underline, and volume pricing is a tier table whose current row is marked with a red edge. Categories carry index tabs. It suits general distributors of office, packaging or janitorial supplies.
+
+## Crate: market case labels
+
+The Crate preset is set at the loading bay of a food and catering wholesaler: kraft board, printed case-end labels with rounded corners and a dashed inner border, round stickers for short facts and price tiers per case. Colors are navy, tomato red and leaf green on kraft and label paper. Collections open in grid view, and the Delivery note block is drawn as a cut-off card.
+
+## Home page layouts
+
+Home page sections in each preset, in order
+Rackline | Ledger | Crate
+Hero | Hero | Hero
+Trade welcome | Product list | Collection list
+Collection list | Collection list | Product list
+Product list | Trade welcome | Image with text
+Feature grid | Image with text | Product list
+Stats | Process steps | Trade welcome
+Process steps | Testimonials | Testimonials
+Logo list | FAQ | FAQ
+FAQ | Newsletter | Newsletter
+Newsletter |  |
+
+## Switching and mixing presets
+
+- Change the visual style in Theme settings → Visual style: Bin labels, Ledger or Crate labels. It changes the graphic language on every template (cards, tables, price breaks, navigation and section titles) but not your fonts, colors or content.
+- Mix freely. Fonts, color schemes, density and corner radius are separate settings, so you can, for example, use the Ledger visual style with your own brand colors.
+- Start fresh with another preset by adding Rackline again from the Shopify Theme Store with that preset. It is added as a separate unpublished theme, so your current theme is not changed.
+
+## Customizing a preset
+
+- Color schemes: each preset has five color schemes. Every section that paints a background has a color scheme setting. Each scheme sets background, text, headings, secondary text, links and focus, primary and secondary buttons, borders and table rules, panels and table headers, sale, in stock and low stock colors.
+- Fonts: heading, body and data fonts come from Shopify’s font library. The data font is used for SKUs, prices, quantities and tables; a monospaced font keeps columns aligned.
+- Zone colors: set a color per collection with the custom.zone_color metafield, or let the visual style assign zone colors by aisle letter.
+- Layout: page width, side margin, density, section spacing, corner radius and motion.
+
+The preset color schemes were checked so that text colors reach at least 4.5:1 contrast on their backgrounds. If you change colors, check contrast again.
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/settings.html
+========================================================================
+
+# Theme settings reference
+
+Theme settings in Rackline apply to the whole store. Open them in the theme editor under Theme settings. This page lists every settings group with its options; defaults are the Rackline preset values, and the Ledger and Crate presets change some of them.
+
+## Visual style
+
+Visual style
+Setting | Options | Default
+Visual style | Bin labels, Ledger, Crate labels | Bin labels
+
+Sets the graphic language used on every template: cards, tables, price breaks, navigation and section headings. See Presets.
+
+## Colors
+
+Color schemes are a group of five schemes in each preset; you can add more. Each scheme has these colors:
+
+Color scheme colors
+Setting | Options | Default
+Text | Background, Text, Headings, Secondary text, Links and focus | Per scheme
+Buttons | Primary button, Primary button label, Secondary button | Per scheme
+Surfaces | Borders and table rules, Panels and table headers | Per scheme
+Status | Sale and savings, In stock, Low stock and warnings | Per scheme
+
+## Typography
+
+Typography
+Setting | Options | Default
+Headings: Font | Shopify font library | Sofia Sans
+Headings: Letter case | As typed, Uppercase | As typed
+Headings: Font size scale | 80–130% | 105%
+Body: Font | Shopify font library | Rethink Sans
+Body: Font size scale | 90–120% | 100%
+Data: Font | Shopify font library; used for SKUs, prices, quantities and tables | Space Mono
+
+## Layout
+
+Layout
+Setting | Options | Default
+Page width | 1200–1800 px | 1400 px
+Page side margin | 12–48 px | 24 px
+Density | Compact, Comfortable (compact fits more rows in tables and lists) | Compact
+Default section spacing | 0–120 px | 48 px
+Button and input corner radius | 0–16 px | 0 px
+Card and panel corner radius | 0–24 px | 0 px
+Motion | None, Subtle | Subtle
+
+Animations are also turned off for visitors whose device asks for reduced motion.
+
+## Logo and business
+
+Logo and business
+Setting | Options | Default
+Logo | Image | None (store name)
+Logo width | 60–300 px | 140 px
+Favicon | Square image, at least 96 × 96 px | None
+Legal business name | Text | Empty (store name is used)
+Sales phone | Text | Empty
+Sales email | Text | Empty
+
+The business details are used in search engine structured data. See SEO.
+
+## Product lists
+
+Product lists
+Setting | Options | Default
+Default collection view | Table, Grid | Table (Grid in Crate)
+Show volume pricing in lists | On, Off | On
+Image ratio (grid cards) | Square, Portrait, Natural | Square
+Show brand | On, Off | On
+Show SKU | On, Off | On
+Show second image on hover | On, Off | Off
+
+## Pricing and trade
+
+Pricing and trade
+Setting | Options | Default
+Show prices to | Everyone, Signed-in customers only | Everyone
+Tax note next to prices | None, Tax included, Excl. tax (text only) | None
+Show quantity rules next to quantity fields | On, Off | On
+Maximum rows in the variant order table | 25–250 | 100
+Quick order page | A page using the order-pad template | None
+Trade account application page | A page using the apply template | None
+Allow quote requests from the cart | On, Off | On
+
+See B2B pricing, Quick order and Request a quote.
+
+## Stock
+
+Stock
+Setting | Options | Default
+Stock display | Hidden, In stock / low stock, Exact quantity | In stock / low stock
+Low stock threshold | Number; only for products whose inventory Shopify tracks | 10
+
+## Cart
+
+Cart
+Setting | Options | Default
+Cart type | Side panel, Cart page | Side panel
+Show order notes | On, Off | On
+Show purchase order number field | On, Off (saved as a cart attribute and shown on the order) | On
+Require purchase order number | On, Off | Off
+Allow cart download as CSV | On, Off | On
+Show accelerated checkout buttons | On, Off | On
+
+## Search
+
+Search
+Setting | Options | Default
+Show search suggestions | On, Off | On
+Show SKUs in suggestions | On, Off | On
+
+## Social media
+
+Links for LinkedIn, YouTube, Facebook, Instagram, X, TikTok, Pinterest, Vimeo, Tumblr and Snapchat. They appear in the Social links block and in the Organization structured data on the home page; the X link also sets the twitter:site tag.
+
+## Currency format
+
+Currency format
+Setting | Options | Default
+Show currency codes | On, Off (example: $12.00 USD) | Off
+
+## Values that differ by preset
+
+Preset values
+Setting | Rackline | Ledger | Crate
+Visual style | Bin labels | Ledger | Crate labels
+Fonts | Sofia Sans, Rethink Sans, Space Mono | Newsreader, Libre Franklin, Source Code Pro | Chivo, Karla, Roboto Mono
+Heading / body scale | 105% / 100% | 110% / 100% | 105% / 105%
+Density | Compact | Comfortable | Comfortable
+Corner radius | 0 / 0 px | 2 / 2 px | 10 / 14 px
+Page width / side margin | 1400 / 24 px | 1300 / 28 px | 1400 / 24 px
+Section spacing | 48 px | 56 px | 48 px
+Default collection view | Table | Table | Grid
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/sections.html
+========================================================================
+
+# Sections and blocks reference
+
+This page lists every section, block and template in the Rackline Shopify theme with a one-line purpose. Most content sections accept theme blocks, so you can add headings, text, buttons, images and groups inside them, and many accept app blocks.
+
+## Templates
+
+Templates and their main section
+Template | Main section | Purpose
+Home page | Your sections | Hero, trade welcome, collections, product lists and content
+Product | Product information + Related products | Product page with product blocks
+Collection | Collection products | Table or grid of products with filters
+Collections list | Collection list | All collections as a table or tiles with aisle codes
+Search | Search results | Product results in table or grid, plus pages and articles
+Cart | Order review | Cart page with PO number, note, CSV download and quote request
+Page | Page content | Standard page
+Page: contact | Page content + Contact form | Contact page
+Page: order-pad | Quick order | Quick order by SKU, barcode, pasted lines or CSV
+Page: apply | Trade application | Trade account application form
+Page: brands | Brand index | Featured brands and an A–Z vendor directory
+Blog | Blog articles | Article list with tag filter
+Article | Article | Article with comments and share link
+404 | Page not found | Not found page with search
+Password | Password page | Store password page with email signup
+Gift card | (Liquid template) | Gift card with QR code, Add to Apple Wallet and print
+
+## Content sections
+
+These sections can be added to the home page and other templates.
+
+Content sections
+Section | Purpose
+Hero | Opening banner with theme blocks beside or over an image; image right, left or as background
+Trade welcome | Greets guests with benefits and an apply button, and B2B buyers with their company and shortcuts
+Collection list | Collections as a compact aisle index or image tiles
+Product list | Products from a collection as a table or grid, with brand, SKU, stock, volume pricing and quick add
+Featured product | One product with the same blocks as the product page
+Feature grid | Icon items in columns, for trade benefits or services
+Stats | Figures such as delivery times or catalog size as a KPI strip
+Process steps | Numbered steps, for example how to open an account
+Logo list | Logos of brands you carry
+Testimonials | Customer quotes with name and role
+FAQ | Questions and answers with optional FAQPage structured data
+Image with text | Image beside theme blocks
+Rich text | Text and buttons from theme blocks
+Video | Shopify-hosted or YouTube/Vimeo video with cover image
+Blog posts | Latest articles from a blog
+Contact panel | Contact details, phone and email from theme settings, and theme blocks
+Newsletter | Email signup form
+Custom section | An empty section in columns for theme blocks and app blocks
+Quick order | The quick order pad (also the main section of the order-pad template)
+Trade application | The trade account application form
+Brand index | Featured brand cards and an A–Z vendor directory
+Contact form | Contact form with optional phone and company fields
+
+## Template sections
+
+Template sections
+Section | Purpose
+Product information | Media gallery and product blocks; accepts theme and app blocks
+Related products | Product recommendations as a table or grid (product template only)
+Collection products | Products with table/grid toggle, filters, sorting and pages
+Search results | Search results with the same views and filters
+Collection list | All collections as a table or tiles, with a collection finder
+Order review | The cart page
+Cart sheet | The side panel cart (when Cart type is Side panel)
+Page content | Page title and content; accepts theme and app blocks
+Blog articles | Article list with layout, tag filter and excerpt options
+Article | Article body with image, date, author, tags, share and comments
+Page not found | 404 message with search
+Password page | Password form and optional email signup
+Quick order options | The variant order table shown in the Options dialog
+
+Search suggestions, Quick order lookup and Cart count are technical sections that the theme’s scripts load; they have no content to edit.
+
+## Header and footer
+
+Header and footer sections
+Section | Purpose
+Utility bar | Short messages, a link menu, a trade application link and country/region and language selectors
+Header | Logo, search, main menu (mega menu), account, company chip, quick order button and cart; two desktop layouts and a sticky option
+Footer | Columns of blocks: menus, text, newsletter, social links, payment icons, Follow on Shop and selectors
+
+The country/region and language selectors appear only when your store sells in more than one country or language.
+
+## Product blocks
+
+Product blocks
+Block | Purpose
+Media | Product images, videos and 3D models
+Title | Product title and optional brand
+SKU | Selected variant SKU and optional barcode
+Price | Price, unit price, tax note and price ladder
+Stock status | Stock chip and incoming stock note
+Variant picker | Option buttons, swatches or dropdowns
+Buy buttons | Quantity, add to cart, purchase options, dynamic checkout, installments, gift card recipient
+Pickup availability | Local pickup status
+Variant order table | Order many variants at once
+Specifications | Built-in and metafield specification rows
+Description | Product description
+Downloads | Files from a metafield and links
+Collapsible row | Expandable text or page content
+Complementary products | Products that pair well
+Share | Share and copy link
+
+See Product pages for settings.
+
+## Content blocks
+
+Content blocks
+Block | Purpose
+Heading | Heading with optional eyebrow, HTML tag and size
+Text | Rich text with size, width and alignment
+Button | Link button with style, size and arrow
+Image | Image with alt text, link and ratio
+Group | Arranges blocks in a row or column, optionally with its own color scheme
+Spacer | Vertical space
+Icon item | Icon or image with title, text and link
+Stat | A figure with label and note
+Step | A numbered step with title, text and link
+FAQ item | Question and answer for the FAQ section
+Quote | Testimonial with author and role
+Logo | Logo image with name and link
+Delivery note | Order cut-off or delivery promise in plain text, without timers
+Newsletter form | Email signup field
+Menu | A menu as a link list
+Social links | Icons for the social media links in theme settings
+Payment icons | Accepted payment methods
+Follow on Shop | Shop app follow button (stores using Shop Pay)
+Country and language | Country/region and language selectors
+Custom Liquid | Your own Liquid or HTML
+
+Some sections have their own blocks: messages in the Utility bar, benefits in Trade welcome and brands in the Brand index.
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/seo.html
+========================================================================
+
+# SEO, meta tags and structured data
+
+Rackline outputs the meta tags and structured data that search engines and AI answer engines use to understand a store: a title, description and canonical link on every page, Open Graph and X (Twitter) tags, and JSON-LD for the organization, website search, products, breadcrumbs, articles and FAQs. Shopify itself generates the store’s sitemap.xml and robots.txt.
+
+## Meta tags on every page
+
+Meta tags output by the theme
+Tag | Content
+<title> | The page title, plus the selected tags and the page number when present, plus the store name
+Meta description | The page’s search engine description from your admin
+Canonical link | Shopify’s canonical URL for the page
+Open Graph | Site name, URL, title, type (product, article or website), description, and an image 1200 pixels wide with its alt text when the page has one
+Product price tags | og:price:amount and og:price:currency on product pages
+X (Twitter) card | Large image card when there is an image, otherwise summary; twitter:site from the X link in Social media settings
+Language | The lang attribute follows the storefront language
+
+## Structured data (JSON-LD)
+
+JSON-LD by page type
+Page | Types | Details
+Home page | Organization, WebSite | Organization name (legal business name setting, or the store name), URL, logo, sameAs links from Social media settings and a sales contactPoint with phone and email when set. WebSite with a SearchAction for your store search.
+Product | Product or ProductGroup | Single-variant products are a Product; products with variants are a ProductGroup with up to 100 variants, variesBy (color, size, material or the option name), SKU, GTIN from the barcode, image, brand (vendor or the brand metafield), description and offers with price, currency, availability and seller. Ratings are added when product rating metafields from a reviews app exist.
+Product, collection | BreadcrumbList | Home, collection and product
+Article | BlogPosting | Headline, image, published and modified dates, author and publisher
+Any page with an FAQ section | FAQPage | When the FAQ section’s “Add FAQ structured data” setting is on. Use it in one FAQ section per page.
+
+Prices for signed-in customers only
+
+When Show prices to is set to signed-in customers only, product structured data leaves out offers, so search results do not show prices that guests cannot see on the page.
+
+## Page structure
+
+- One h1 per page, with section headings below it.
+- Images use the alt text you enter in Shopify; purely decorative images get an empty alt attribute.
+- Data tables use captions and column headers, which helps both screen readers and machines read product tables.
+- Collection and search pages can show breadcrumbs (section setting), and product and collection pages output breadcrumb structured data.
+- Pages are server-rendered Liquid, so content is readable without running JavaScript.
+
+## What you control
+
+- Fill in Theme settings → Logo and business: legal business name, sales phone and sales email.
+- Add your social media profiles in Theme settings → Social media.
+- Write a search engine title and description for your home page, collections, products and pages in your Shopify admin.
+- Give every product a SKU and, where you have one, a barcode (GTIN).
+- Use the Specifications block with metafields so key attributes are on the page as text.
+- Write collection descriptions and turn on Show collection description.
+- Add alt text to product and section images.
+- Answer common buyer questions in an FAQ section with structured data turned on.
+
+## Search engines and AI answer engines
+
+AI answer engines read the same signals as search engines: clear page text, headings, tables and structured data. Product pages that state the SKU, specifications, pack sizes and stock as text, and an FAQ that answers trade questions (minimum order, delivery, payment terms), give these engines facts they can quote. Rackline does not hide product content behind scripts, and its tables use real table markup.
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/faq.html
+========================================================================
+
+# Rackline FAQ for B2B merchants
+
+Answers to the questions merchants ask most about the Rackline Shopify theme: B2B requirements, prices, quantity rules, quick order, the cart, presets and support.
+
+## General
+
+Q: What is the Rackline Shopify theme?
+
+Rackline is a Shopify theme for B2B trade suppliers and wholesalers whose buyers reorder by SKU. It shows Shopify’s native B2B company prices, quantity rules and volume pricing, and adds a quick order page, table views for collections and search, a variant order table and a cart with purchase order numbers, CSV download and quote requests. It has three presets: Rackline, Ledger and Crate.
+
+Q: Who is Rackline designed for?
+
+Rackline is designed for distributors and trade suppliers with returning business buyers and large catalogs, for example electronics and network hardware, office and janitorial supplies, packaging, and catering or food-service supply. It also works for stores that sell to both trade and retail customers.
+
+Q: Which languages does Rackline support?
+
+Rackline ships in English, with one locale file. You can edit the storefront text in Shopify’s theme language editor.
+
+Q: Does Rackline work with apps?
+
+Yes. The product page, featured product and most content sections accept app blocks, and the Custom Liquid block and Custom section are available for other embeds.
+
+Q: Is Rackline fast and accessible?
+
+On the live demo stores, Lighthouse 12.8 (October 2026) measured performance scores of 96 to 100 on mobile and 100 on desktop for the home, collection and product pages, and an accessibility score of 100 on all measured pages. Results on your store depend on your images, apps and content.
+
+Q: Does Rackline add structured data for search engines?
+
+Yes. It outputs Organization and WebSite (with search) on the home page, Product or ProductGroup with offers on product pages, BreadcrumbList on collection and product pages, BlogPosting on articles and FAQPage from the FAQ section. See SEO.
+
+Q: Where can I buy Rackline?
+
+Rackline is available only on the Shopify Theme Store, where you can also try it on your store before buying.
+
+Q: How do I get support?
+
+Use the support form linked on the Support page. We reply within two business days. Support covers theme questions and bug fixes; it does not include custom development.
+
+## B2B, pricing and trade accounts
+
+Q: Does Rackline need an app for B2B?
+
+No. Rackline uses Shopify’s native B2B features (companies, catalogs, quantity rules and volume pricing) and displays them without a B2B app. The quick order page, variant order table, PO number field, cart CSV download, quote requests and trade application form are built into the theme. Shopify’s free Search & Discovery app is used to choose filters and complementary products, as in most themes.
+
+Q: Which Shopify plan do the B2B features need?
+
+Shopify B2B features such as companies, catalogs, quantity rules and volume pricing are available on Shopify plans that include B2B, for example Shopify Plus. Check Shopify’s current plan comparison, because plan details can change. Shopify B2B also requires the newer customer accounts. Rackline’s own features, such as quick order, table view, the variant order table, PO numbers, cart CSV, quote requests and price visibility, do not depend on B2B and work on any plan.
+
+Q: Can I sell to trade and retail customers in the same store?
+
+Yes. Signed-in B2B buyers see the prices, quantity rules and volume pricing of their company catalog; other visitors see your regular prices. If you sell only to trade customers, set Show prices to to signed-in customers only.
+
+Q: How do I hide prices from guests?
+
+In Theme settings → Pricing and trade, set Show prices to to Signed-in customers only. Guests then see a “Sign in to see prices” link instead of prices, quantity fields, add to cart and accelerated checkout buttons, and the quick order page asks them to sign in.
+
+Q: Where do company prices come from?
+
+From Shopify. You set prices in B2B catalogs assigned to company locations in your Shopify admin. When a buyer signs in, Shopify returns the price for their current location and Rackline shows it on every page. The theme never calculates prices.
+
+Q: How does Rackline handle quantity rules?
+
+Every quantity field reads the variant’s minimum, maximum and increment. The field shows a hint such as “Min 10 · Increments of 5”, the plus and minus buttons step by the increment, and a typed quantity that breaks the rule is changed to the nearest valid value with a message. Quantities already in the cart count toward the maximum.
+
+Q: How are volume price breaks shown?
+
+On product pages, the Price block shows a price ladder: each tier with its minimum quantity, unit price and saving, the tier that matches the chosen quantity highlighted, and a live unit price and subtotal. Collection tables, product lists and cards can show a compact one-line ladder when Show volume pricing in lists is on.
+
+Q: How do trade account applications work?
+
+Create a page with the apply template and select it in Theme settings. The form collects company and contact details, business type and expected monthly volume, and sends them to your store email through Shopify’s contact form, tagged with your email marker. You review the application and create the company in your Shopify admin; the theme does not create accounts automatically.
+
+## Quick order
+
+Q: What file format does quick order accept?
+
+A CSV file with the SKU or barcode in the first column and the quantity in the second. A header row is detected automatically, and commas, semicolons or tabs can separate the columns. The sample file starts with the header sku,quantity. Files can be up to 1 MB, and the order pad holds up to 250 lines.
+
+Q: Is the uploaded CSV file stored anywhere?
+
+No. The file is read in the buyer’s browser and is not uploaded. Only the SKU lookups are sent to your store, the same way a search is.
+
+Q: Can buyers scan barcodes?
+
+Yes. Quick order and the store search match variant barcodes as well as SKUs. A barcode scanner that types the code like a keyboard and presses Enter works in the quick order SKU field.
+
+## Cart and checkout
+
+Q: Can buyers add a purchase order number?
+
+Yes. The Order review (cart) page has a PO number field, saved as a cart attribute named “PO number” that appears on the order. You can make it required in Theme settings → Cart, which stops checkout until it is filled in.
+
+Q: Can buyers request a quote instead of checking out?
+
+Yes. With quote requests turned on, the Order review page has a Request a quote button. The buyer adds their name, email, company, phone and a message, and the cart lines (SKU, product, quantity and line price) are sent to your store email through Shopify’s contact form.
+
+Q: Can buyers download their cart?
+
+Yes. The Download CSV button on the Order review page saves the cart as a CSV file with SKU, product, variant, quantity, unit price, line total and currency.
+
+## Presets and design
+
+Q: What are aisle (zone) codes, and do I need them?
+
+Aisle codes are short codes such as A1 or B2 shown on menus, collection lists and product labels. They come from the collection metafield custom.zone_code; without it, the theme uses position codes. They are decorative and optional, and screen readers skip them.
+
+Q: What is the difference between the Rackline, Ledger and Crate presets?
+
+They share all features and differ in visual style. Rackline looks like warehouse bin labels (yellow and black, square corners, compact, table view). Ledger looks like an account book (green ledger paper, red margin lines, serif headings). Crate looks like market case labels (kraft paper, dashed labels, round stickers, grid view).
+
+Q: Can I change the preset later?
+
+Yes. Change the visual style in Theme settings → Visual style and adjust fonts, colors and density separately. To start fresh with another preset’s home page, add Rackline again from the Shopify Theme Store with that preset; it is added as a separate unpublished theme.
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/changelog.html
+========================================================================
+
+# Changelog
+
+Release notes for the Rackline Shopify theme. The theme version is shown in Online Store → Themes under the theme name.
+
+## 1.0.0: Initial release
+
+Release date: October 2026
+
+### Presets
+
+- Rackline (warehouse bin labels), Ledger (account book) and Crate (market case labels), each with its own visual style, fonts, color schemes, density and home page layout.
+
+### B2B
+
+- Company and location chip in the header and menu drawer for B2B buyers.
+- Company prices from Shopify B2B catalogs on every page.
+- Quantity rules on every quantity field, with hints and snapping to valid quantities.
+- Price ladder for volume pricing on product pages, and an optional compact ladder in lists.
+- Price visibility setting (everyone or signed-in customers only) and a tax note next to prices.
+- Trade welcome section and a trade account application template.
+
+### Ordering
+
+- Quick order template: SKU and barcode lines, paste from a spreadsheet, CSV upload, sample CSV and an order check.
+- Table and grid views for collections and search, remembered per shopper.
+- Variant order table on product pages and in the Options dialog from lists.
+- Predictive search that matches SKUs and barcodes.
+- Cart side panel or Order review page with order notes, PO number (optional or required), cart CSV download and quote requests.
+
+### Catalog and content
+
+- Product blocks for SKU, stock, specifications, downloads, pickup availability, delivery note and complementary products.
+- Aisle codes from the custom.zone_code collection metafield on menus, collection lists and product labels.
+- Brand index with an A–Z vendor directory, blog, FAQ, contact, 404 and password templates.
+- Structured data for Organization, WebSite, Product or ProductGroup, BreadcrumbList, BlogPosting and FAQPage.
+
+========================================================================
+Page: https://lzzhdfq11-tech.github.io/rackline-docs/support.html
+========================================================================
+
+# Support
+
+Partwise Studio supports the Rackline Shopify theme through a support form. We reply within two business days. Support covers bug fixes and questions about the theme’s settings, sections and features; it does not include custom development.
+
+## Contact support
+
+Send your request through the support form. We reply within two business days.
+
+## What support covers
+
+- Bug fixes: anything in the theme that does not work as documented. Fixes are released in theme updates.
+- Theme questions: how to use settings, sections and blocks, the quick order page, price ladders, aisle codes and the other features in this documentation.
+- Setup guidance: which theme settings to use for your B2B setup, and where in Shopify a feature is configured.
+
+## What support does not cover
+
+- Custom development: new features, design changes or code changes made for your store.
+- Problems caused by third-party apps or by edits to the theme code.
+- Setting up your Shopify B2B data, such as companies, catalogs and payment terms. Shopify’s Help Center covers these.
+
+## Before you contact us
+
+- Check the FAQ and the guide for the feature, for example Quick order or B2B pricing.
+- Check whether the problem also happens with apps turned off or in an unedited copy of the theme.
+- Make sure you use the latest Rackline version (see the changelog).
+
+## What to include
+
+- Your store address.
+- The theme version and the preset you started from (Rackline, Ledger or Crate).
+- The page where it happens and the steps to reproduce it.
+- Whether you were signed in as a B2B customer, a regular customer or a guest.
+- Screenshots or a short screen recording, and the browser and device.
+
+## Collaborator access
+
+For some issues we may ask for collaborator access so we can look at your theme settings. You approve the request in your Shopify admin, and you can remove access at any time. We ask only for theme permissions, work on a copy of your theme, and never ask for your password.
